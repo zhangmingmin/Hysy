@@ -11,12 +11,33 @@
        http://www.springframework.org/schema/aop 
        http://www.springframework.org/schema/aop/spring-aop.xsd 
        http://www.springframework.org/schema/tx 
-       http://www.springframework.org/schema/tx/spring-tx.xsd">
+       http://www.springframework.org/schema/tx/spring-tx.xsd" default-merge="default">
 	
     <context:property-placeholder location="classpath:config.properties"></context:property-placeholder>
 	 
 
-	
+	<bean>
+		<constructor-arg>
+			<idref bean="d"/>
+		</constructor-arg>
+		<constructor-arg>
+			<value type=""></value>
+		</constructor-arg>
+		<constructor-arg>
+			<array merge="default" value-type=""></array>
+		</constructor-arg>
+		<constructor-arg>
+			<map > 
+				<entry><key></key><value></value></entry>
+			</map>
+		</constructor-arg>
+		<constructor-arg>
+			<props>
+				<prop key=""></prop>
+			</props>
+		</constructor-arg>
+		
+	</bean>
 
 
 </beans>
